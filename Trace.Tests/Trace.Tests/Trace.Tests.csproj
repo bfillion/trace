@@ -3,12 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
-    <UserSecretsId>5f0fec59-9e44-4070-aa82-386c39175337</UserSecretsId>
+    <UserSecretsId>e65f6de6-1d8a-4964-a19b-68e7645dffd5</UserSecretsId>
   </PropertyGroup>
 
 
+
   <ItemGroup>
-    <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.6.2" />
     <PackageReference Include="Jaeger" Version="0.3.7" />
+    <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.6.2" />
   </ItemGroup>
 </Project>
