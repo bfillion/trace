@@ -26,7 +26,7 @@ namespace Trace.Tests
 
             services.AddHttpClient("WeatherForecast", c =>
             {
-                c.BaseAddress = new Uri("https://trace.api.tests/WeatherForecast");
+                c.BaseAddress = new Uri("http://trace.api.tests/WeatherForecast");
             });
 
             services.AddOpenTracing();

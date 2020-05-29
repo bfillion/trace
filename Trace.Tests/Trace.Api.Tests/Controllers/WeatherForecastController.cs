@@ -26,6 +26,11 @@ namespace Trace.Api.Tests.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            return GetWeatherForecasts();
+        }
+
+        private IEnumerable<WeatherForecast> GetWeatherForecasts()
+        {
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

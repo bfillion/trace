@@ -24,6 +24,15 @@ services:
       - "14268:14268"
       - "9411:9411"
 
+  grafana:
+    image: grafana/grafana:7.0.0
+    depends_on:
+      - jaeger
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana:/var/lib/grafana
+
   trace.api.tests:
     image: ${DOCKER_REGISTRY-}traceapi
     build:
